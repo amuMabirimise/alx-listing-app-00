@@ -8,4 +8,15 @@ export interface CardProps {
     label: string;
     onClick: () => void;
   }
+
+  export interface PropertyProps {
+    name: string;
+    rating: number;
+    address: { city: string; country: string };
+    image: string;
+    description: string;
+    category: string[];
+    price: number;
+    reviews: { name: string; avatar: string; rating: number; comment: string }[];
+  }
   
